@@ -6,234 +6,349 @@
     android:background="@drawable/background"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Add">
+    tools:context=".Add"
+    android:baselineAligned="false">
 
     <LinearLayout
-        android:layout_width="match_parent"
+        android:layout_width="0dp"
         android:layout_height="match_parent"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        android:layout_weight="0.5">
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal">
+            android:orientation="vertical"
+            android:layout_weight="0.5">
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_weight="0.5"
-                android:orientation="vertical">
+                android:orientation="horizontal"
+                android:layout_weight="0"
+                android:baselineAligned="false">
                 <LinearLayout
-                    android:layout_width="match_parent"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:orientation="horizontal">
-                    <TextView
-                        android:id="@+id/textViewTitle"
-                        android:layout_width="wrap_content"
-                        android:layout_height="match_parent"
-                        android:text="@string/title"
-                        android:layout_margin="8dp"
-                        android:textAppearance="?android:attr/textAppearanceMedium"
-                        android:textColor="@android:color/white" />
-
-                    <com.rengwuxian.materialedittext.MaterialEditText
-                        android:id="@+id/title"
-                        android:layout_width="0dp"
+                    android:layout_weight="0"
+                    android:orientation="vertical">
+                    <LinearLayout
+                        android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_weight="0.5"
-                        android:hint="@string/titlee"
-                        android:inputType="text"
-                        android:textSize="20sp"
-                        android:layout_margin="8dp"
-                        android:backgroundTint="@android:color/holo_blue_bright"
-                        android:textColor="@android:color/white" />
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/textViewTitle"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_margin="8dp"
+                            android:gravity="center"
+                            android:text="@string/title"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:textColor="@android:color/white" />
+
+                        <com.rengwuxian.materialedittext.MaterialEditText
+                            android:id="@+id/title"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.5"
+                            android:hint="@string/titlee"
+                            android:inputType="text"
+                            android:textSize="20sp"
+                            android:layout_margin="8dp"
+                            android:backgroundTint="@android:color/holo_blue_bright"
+                            android:textColor="@android:color/white"
+                            app:met_baseColor="@android:color/white"
+                            app:met_floatingLabel="highlight"
+                            app:met_primaryColor="@android:color/white"
+                            app:met_singleLineEllipsis="true"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:id="@+id/textViewYear"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:text="@string/yearr"
+                            android:layout_margin="8dp"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:textColor="@android:color/white" />
+
+                        <com.rengwuxian.materialedittext.MaterialEditText
+                            android:id="@+id/Year"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:hint="@string/year"
+                            android:layout_weight="0.5"
+                            android:inputType="text"
+                            android:textSize="20sp"
+                            android:layout_margin="8dp"
+                            android:backgroundTint="@android:color/holo_blue_bright"
+                            android:textColor="@android:color/white"
+                            app:met_baseColor="@android:color/white"
+                            app:met_floatingLabel="highlight"
+                            app:met_primaryColor="@android:color/white"
+                            app:met_singleLineEllipsis="true"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:id="@+id/textViewRunTime"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:text="@string/runtime"
+                            android:layout_margin="8dp"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:textColor="@android:color/white" />
+
+                        <com.rengwuxian.materialedittext.MaterialEditText
+                            android:id="@+id/RunTime"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:hint="@string/runtimee"
+                            android:inputType="text"
+                            android:textSize="20sp"
+                            android:layout_margin="8dp"
+                            android:layout_weight="0.5"
+                            android:backgroundTint="@android:color/holo_blue_bright"
+                            android:textColor="@android:color/white"
+                            app:met_baseColor="@android:color/white"
+                            app:met_floatingLabel="highlight"
+                            app:met_primaryColor="@android:color/white"
+                            app:met_singleLineEllipsis="true"/>
+                        <TextView
+                            android:id="@+id/min"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_margin="8dp"
+                            android:gravity="center"
+                            android:text="@string/min"
+                            android:textAppearance="?android:attr/textAppearanceSmall"
+                            android:textColor="@android:color/white"
+                            app:met_baseColor="@android:color/white"
+                            app:met_floatingLabel="highlight"
+                            app:met_primaryColor="@android:color/white"
+                            app:met_singleLineEllipsis="true"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:id="@+id/textViewActors"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:text="@string/actorss"
+                            android:layout_margin="8dp"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:textColor="@android:color/white"/>
+                        <com.rengwuxian.materialedittext.MaterialEditText
+                            android:id="@+id/actors"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:hint="@string/actors"
+                            android:layout_weight="0.5"
+                            android:inputType="text"
+                            android:textSize="20sp"
+                            android:layout_margin="8dp"
+                            android:backgroundTint="@android:color/holo_blue_bright"
+                            android:textColor="@android:color/white"
+                            app:met_baseColor="@android:color/white"
+                            app:met_floatingLabel="highlight"
+                            app:met_primaryColor="@android:color/white"
+                            app:met_singleLineEllipsis="true"/>
+                    </LinearLayout>
                 </LinearLayout>
                 <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="horizontal">
-                    <TextView
-                        android:id="@+id/textViewYear"
-                        android:layout_width="wrap_content"
-                        android:layout_height="match_parent"
-                        android:text="@string/yearr"
-                        android:layout_margin="8dp"
-                        android:textAppearance="?android:attr/textAppearanceMedium"
-                        android:textColor="@android:color/white" />
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
 
-                    <com.rengwuxian.materialedittext.MaterialEditText
-                        android:id="@+id/Year"
-                        android:layout_width="0dp"
-                        android:layout_height="wrap_content"
-                        android:hint="@string/year"
-                        android:layout_weight="0.5"
-                        android:inputType="text"
-                        android:textSize="20sp"
-                        android:layout_margin="8dp"
-                        android:backgroundTint="@android:color/holo_blue_bright"
-                        android:textColor="@android:color/white" />
-                </LinearLayout>
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="horizontal">
-                    <TextView
-                        android:id="@+id/textViewRunTime"
-                        android:layout_width="wrap_content"
+                    <ImageButton
+                        android:id="@+id/theImageButton"
+                        android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:text="@string/runtime"
                         android:layout_margin="8dp"
-                        android:textAppearance="?android:attr/textAppearanceMedium"
-                        android:textColor="@android:color/white" />
+                        android:layout_weight="0.5"
+                        android:contentDescription="@string/todo"/>
 
-                    <com.rengwuxian.materialedittext.MaterialEditText
-                        android:id="@+id/RunTime"
-                        android:layout_width="0dp"
-                        android:layout_height="wrap_content"
-                        android:hint="@string/runtimee"
-                        android:inputType="text"
-                        android:textSize="20sp"
-                        android:layout_margin="8dp"
-                        android:layout_weight="0.5"
-                        android:backgroundTint="@android:color/holo_blue_bright"
-                        android:textColor="@android:color/white" />
-                    <TextView
-                        android:id="@+id/min"
+                    <info.hoang8f.widget.FButton
+                        android:id="@+id/AddImage"
                         android:layout_width="wrap_content"
-                        android:layout_height="match_parent"
-                        android:layout_margin="8dp"
-                        android:text="@string/min"
-                        android:textAppearance="?android:attr/textAppearanceSmall"
-                        android:textColor="@android:color/white" />
-                </LinearLayout>
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="horizontal">
-                    <TextView
-                        android:id="@+id/textViewActors"
-                        android:layout_width="wrap_content"
-                        android:layout_height="match_parent"
-                        android:text="@string/actorss"
-                        android:layout_margin="8dp"
-                        android:textAppearance="?android:attr/textAppearanceMedium"
-                        android:textColor="@android:color/white"/>
-                    <com.rengwuxian.materialedittext.MaterialEditText
-                        android:id="@+id/actors"
-                        android:layout_width="0dp"
                         android:layout_height="wrap_content"
-                        android:hint="@string/actors"
-                        android:layout_weight="0.5"
-                        android:inputType="text"
-                        android:textSize="20sp"
+                        android:layout_gravity="center|center_vertical"
                         android:layout_margin="8dp"
-                        android:backgroundTint="@android:color/holo_blue_bright"
-                        android:textColor="@android:color/white" />
+                        android:layout_weight="0"
+                        android:gravity="center_horizontal"
+                        android:text="@string/add_image"
+                        android:textColor="@android:color/black"
+                        app:cornerRadius="5dp"
+                        app:fButtonColor="@color/btn"
+                        app:shadowColor="@android:color/black"
+                        app:shadowEnabled="true"
+                        app:shadowHeight="5dp" />
+
                 </LinearLayout>
             </LinearLayout>
-            <ImageButton
-                android:id="@+id/theImageButton"
+            <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:layout_margin="8dp"
-                android:contentDescription="@string/todo" />
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:id="@+id/textViewDirector"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="@string/director"
+                    android:layout_margin="8dp"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@android:color/white"/>
+                <com.rengwuxian.materialedittext.MaterialEditText
+                    android:id="@+id/director"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/directorr"
+                    android:layout_weight="0.5"
+                    android:inputType="text"
+                    android:textSize="20sp"
+                    android:layout_margin="8dp"
+                    android:backgroundTint="@android:color/holo_blue_bright"
+                    android:textColor="@android:color/white"
+                    app:met_baseColor="@android:color/white"
+                    app:met_floatingLabel="highlight"
+                    app:met_primaryColor="@android:color/white"
+                    app:met_singleLineEllipsis="true"/>
+
+                <TextView
+                    android:id="@+id/textViewGenre"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="@string/genre"
+                    android:layout_margin="8dp"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@android:color/white"/>
+
+                <com.rengwuxian.materialedittext.MaterialEditText
+                    android:id="@+id/genre"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:layout_weight="0.5"
+                    android:backgroundTint="@android:color/holo_blue_bright"
+                    android:hint="@string/genree"
+                    android:inputType="text"
+                    android:textColor="@android:color/white"
+                    android:textSize="20sp"
+                    app:met_baseColor="@android:color/white"
+                    app:met_floatingLabel="highlight"
+                    app:met_primaryColor="@android:color/white"
+                    app:met_singleLineEllipsis="true"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:id="@+id/textViewDate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="@string/set_date"
+                    android:layout_margin="8dp"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@android:color/white"/>
+                <com.rengwuxian.materialedittext.MaterialEditText
+                    android:id="@+id/date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/the_date_when_you_watch"
+                    android:layout_weight="0.5"
+                    android:inputType="text"
+                    android:textSize="15sp"
+                    android:layout_margin="8dp"
+                    android:backgroundTint="@android:color/holo_blue_bright"
+                    android:textColor="@android:color/white"
+                    app:met_baseColor="@android:color/white"
+                    app:met_floatingLabel="highlight"
+                    app:met_primaryColor="@android:color/white"
+                    app:met_singleLineEllipsis="true"/>
+
+                <TextView
+                    android:id="@+id/textViewTime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="@string/time"
+                    android:layout_margin="8dp"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@android:color/white"/>
+
+                <com.rengwuxian.materialedittext.MaterialEditText
+                    android:id="@+id/time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:layout_weight="0.5"
+                    android:backgroundTint="@android:color/holo_blue_bright"
+                    android:hint="@string/the_time_you_when_to_watch"
+                    android:inputType="text"
+                    android:textColor="@android:color/white"
+                    android:textSize="15sp"
+                    app:met_baseColor="@android:color/white"
+                    app:met_floatingLabel="highlight"
+                    app:met_primaryColor="@android:color/white"
+                    app:met_singleLineEllipsis="true"/>
+            </LinearLayout>
         </LinearLayout>
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal">
-            <TextView
-                android:id="@+id/textViewDirector"
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:text="@string/director"
-                android:layout_margin="8dp"
-                android:textAppearance="?android:attr/textAppearanceMedium"
-                android:textColor="@android:color/white"/>
-            <com.rengwuxian.materialedittext.MaterialEditText
-                android:id="@+id/director"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:hint="@string/directorr"
-                android:layout_weight="0.5"
-                android:inputType="text"
-                android:textSize="20sp"
-                android:layout_margin="8dp"
-                android:backgroundTint="@android:color/holo_blue_bright"
-                android:textColor="@android:color/white" />
+            android:orientation="vertical"
+            android:layout_weight="0">
 
-            <TextView
-                android:id="@+id/textViewGenre"
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:text="@string/genre"
-                android:layout_margin="8dp"
-                android:textAppearance="?android:attr/textAppearanceMedium"
-                android:textColor="@android:color/white"/>
-            <com.rengwuxian.materialedittext.MaterialEditText
-                android:id="@+id/genre"
-                android:layout_width="wrap_content"
+            <LinearLayout
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="@string/genree"
-                android:layout_weight="0.5"
-                android:inputType="text"
-                android:textSize="20sp"
-                android:layout_margin="8dp"
-                android:backgroundTint="@android:color/holo_blue_bright"
-                android:textColor="@android:color/white"/>
-        </LinearLayout>
-        <TextView
-            android:id="@+id/textViewPlot"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/plot"
-            android:layout_margin="8dp"
-            android:textAppearance="?android:attr/textAppearanceMedium"
-            android:textColor="@android:color/white"/>
-        <com.rengwuxian.materialedittext.MaterialEditText
-            android:id="@+id/editTextPlot"
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:hint="@string/plott"
-            android:layout_weight="1"
-            android:inputType="text"
-            android:textSize="20sp"
-            android:layout_margin="8dp"
-            android:backgroundTint="@android:color/holo_red_light"
-            android:textColor="@android:color/white" />
+                android:orientation="horizontal"
+                android:weightSum="2">
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:weightSum="2">
+                <info.hoang8f.widget.FButton
+                    android:id="@+id/AddToCalendar"
+                    android:layout_weight="1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:text="@string/add_to_calendar"
+                    android:textColor="@android:color/black"
+                    app:fButtonColor="@color/btn"
+                    app:shadowColor="@android:color/black"
+                    app:shadowEnabled="true"
+                    app:shadowHeight="5dp"
+                    app:cornerRadius="5dp"/>
 
-            <info.hoang8f.widget.FButton
-                android:id="@+id/AddToCalendar"
-                android:layout_weight="1"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_margin="8dp"
-                android:text="@string/add_to_calendar"
-                android:textColor="@android:color/black"
-                app:fButtonColor="@color/btn"
-                app:shadowColor="@android:color/black"
-                app:shadowEnabled="true"
-                app:shadowHeight="5dp"
-                app:cornerRadius="5dp"/>
+                <info.hoang8f.widget.FButton
+                    android:id="@+id/backSearch"
+                    android:layout_weight="1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:text="@string/back"
+                    android:textColor="@android:color/black"
+                    app:fButtonColor="@color/btn"
+                    app:cornerRadius="5dp"
+                    app:shadowColor="@android:color/black"
+                    app:shadowEnabled="true"
+                    app:shadowHeight="5dp" />
+            </LinearLayout>
 
-            <info.hoang8f.widget.FButton
-                android:id="@+id/backSearch"
-                android:layout_weight="1"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_margin="8dp"
-                android:text="@string/back"
-                android:textColor="@android:color/black"
-                app:fButtonColor="@color/btn"
-                app:cornerRadius="5dp"
-                app:shadowColor="@android:color/black"
-                app:shadowEnabled="true"
-                app:shadowHeight="5dp" />
         </LinearLayout>
     </LinearLayout>
 </LinearLayout>

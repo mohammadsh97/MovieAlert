@@ -24,4 +24,9 @@
     <string name="todo">TODO</string>
     <string name="searchh">Search</string>
     <string name="backk">back</string>
+    <string name="set_date">Set Date</string>
+    <string name="the_date_when_you_watch">The date when you Watch</string>
+    <string name="time">Time</string>
+    <string name="the_time_you_when_to_watch">The time you when to watch</string>
+    <string name="add_image">Add Image</string>
 </resources>
