@@ -16,7 +16,7 @@
         android:weightSum="2">
 
         <info.hoang8f.widget.FButton
-            android:id="@+id/btn1"
+            android:id="@+id/btnAddManuallyMovie"
             android:layout_weight="1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -30,7 +30,7 @@
             app:cornerRadius="5dp"/>
 
         <info.hoang8f.widget.FButton
-            android:id="@+id/btn2"
+            android:id="@+id/btnSearchMovie"
             android:layout_weight="1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -44,7 +44,7 @@
             app:shadowHeight="5dp" />
 
         <info.hoang8f.widget.FButton
-            android:id="@+id/btn3"
+            android:id="@+id/btnCalendar"
             android:layout_weight="1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
