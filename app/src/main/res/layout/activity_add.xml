@@ -29,17 +29,17 @@
                         android:id="@+id/textViewTitle"
                         android:layout_width="wrap_content"
                         android:layout_height="match_parent"
-                        android:text="Title :"
+                        android:text="@string/title"
                         android:layout_margin="8dp"
                         android:textAppearance="?android:attr/textAppearanceMedium"
                         android:textColor="@android:color/white" />
 
                     <com.rengwuxian.materialedittext.MaterialEditText
                         android:id="@+id/title"
-                        android:layout_width="wrap_content"
+                        android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="0.5"
-                        android:hint="Title"
+                        android:hint="@string/titlee"
                         android:inputType="text"
                         android:textSize="20sp"
                         android:layout_margin="8dp"
@@ -54,16 +54,16 @@
                         android:id="@+id/textViewYear"
                         android:layout_width="wrap_content"
                         android:layout_height="match_parent"
-                        android:text="Year :"
+                        android:text="@string/yearr"
                         android:layout_margin="8dp"
                         android:textAppearance="?android:attr/textAppearanceMedium"
                         android:textColor="@android:color/white" />
 
                     <com.rengwuxian.materialedittext.MaterialEditText
                         android:id="@+id/Year"
-                        android:layout_width="wrap_content"
+                        android:layout_width="0dp"
                         android:layout_height="wrap_content"
-                        android:hint="Year"
+                        android:hint="@string/year"
                         android:layout_weight="0.5"
                         android:inputType="text"
                         android:textSize="20sp"
@@ -79,16 +79,16 @@
                         android:id="@+id/textViewRunTime"
                         android:layout_width="wrap_content"
                         android:layout_height="match_parent"
-                        android:text="RunTime :"
+                        android:text="@string/runtime"
                         android:layout_margin="8dp"
                         android:textAppearance="?android:attr/textAppearanceMedium"
                         android:textColor="@android:color/white" />
 
                     <com.rengwuxian.materialedittext.MaterialEditText
                         android:id="@+id/RunTime"
-                        android:layout_width="wrap_content"
+                        android:layout_width="0dp"
                         android:layout_height="wrap_content"
-                        android:hint="RunTime"
+                        android:hint="@string/runtimee"
                         android:inputType="text"
                         android:textSize="20sp"
                         android:layout_margin="8dp"
@@ -100,7 +100,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="match_parent"
                         android:layout_margin="8dp"
-                        android:text="Min"
+                        android:text="@string/min"
                         android:textAppearance="?android:attr/textAppearanceSmall"
                         android:textColor="@android:color/white" />
                 </LinearLayout>
@@ -112,15 +112,15 @@
                         android:id="@+id/textViewActors"
                         android:layout_width="wrap_content"
                         android:layout_height="match_parent"
-                        android:text="Actors :"
+                        android:text="@string/actorss"
                         android:layout_margin="8dp"
                         android:textAppearance="?android:attr/textAppearanceMedium"
                         android:textColor="@android:color/white"/>
                     <com.rengwuxian.materialedittext.MaterialEditText
                         android:id="@+id/actors"
-                        android:layout_width="wrap_content"
+                        android:layout_width="0dp"
                         android:layout_height="wrap_content"
-                        android:hint="Actors"
+                        android:hint="@string/actors"
                         android:layout_weight="0.5"
                         android:inputType="text"
                         android:textSize="20sp"
@@ -134,7 +134,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:layout_margin="8dp"/>
+                android:layout_margin="8dp"
+                android:contentDescription="@string/todo" />
         </LinearLayout>
         <LinearLayout
             android:layout_width="match_parent"
@@ -144,7 +145,7 @@
                 android:id="@+id/textViewDirector"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
-                android:text="Director :"
+                android:text="@string/director"
                 android:layout_margin="8dp"
                 android:textAppearance="?android:attr/textAppearanceMedium"
                 android:textColor="@android:color/white"/>
@@ -152,7 +153,7 @@
                 android:id="@+id/director"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:hint="Director"
+                android:hint="@string/directorr"
                 android:layout_weight="0.5"
                 android:inputType="text"
                 android:textSize="20sp"
@@ -164,7 +165,7 @@
                 android:id="@+id/textViewGenre"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
-                android:text="Genre :"
+                android:text="@string/genre"
                 android:layout_margin="8dp"
                 android:textAppearance="?android:attr/textAppearanceMedium"
                 android:textColor="@android:color/white"/>
@@ -172,7 +173,7 @@
                 android:id="@+id/genre"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:hint="Genre"
+                android:hint="@string/genree"
                 android:layout_weight="0.5"
                 android:inputType="text"
                 android:textSize="20sp"
@@ -184,15 +185,15 @@
             android:id="@+id/textViewPlot"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Plot :"
+            android:text="@string/plot"
             android:layout_margin="8dp"
             android:textAppearance="?android:attr/textAppearanceMedium"
             android:textColor="@android:color/white"/>
         <com.rengwuxian.materialedittext.MaterialEditText
             android:id="@+id/editTextPlot"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:hint="Plot"
+            android:layout_height="0dp"
+            android:hint="@string/plott"
             android:layout_weight="1"
             android:inputType="text"
             android:textSize="20sp"
@@ -203,7 +204,6 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_alignParentBotton="true"
             android:orientation="horizontal"
             android:weightSum="2">
 
@@ -213,7 +213,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_margin="8dp"
-                android:text="Add To Calendar"
+                android:text="@string/add_to_calendar"
                 android:textColor="@android:color/black"
                 app:fButtonColor="@color/btn"
                 app:shadowColor="@android:color/black"
@@ -227,7 +227,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_margin="8dp"
-                android:text="Back"
+                android:text="@string/back"
                 android:textColor="@android:color/black"
                 app:fButtonColor="@color/btn"
                 app:cornerRadius="5dp"

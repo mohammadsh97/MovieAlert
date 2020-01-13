@@ -4,4 +4,24 @@
     <string name="search_movie">search movie</string>
     <string name="Calendar">Calendar</string>
     <string name="search">SEARCH</string>
+    <string name="year">Year</string>
+    <string name="director">Director :</string>
+    <string name="actors">Actors</string>
+    <string name="actorss">Actors :</string>
+    <string name="title">Title :</string>
+    <string name="directorr">Director</string>
+    <string name="titlee">Title</string>
+    <string name="runtime">RunTime :</string>
+    <string name="min">Min</string>
+    <string name="yearr">Year :</string>
+    <string name="runtimee">RunTime</string>
+    <string name="genre">Genre :</string>
+    <string name="genree">Genre</string>
+    <string name="plot">Plot :</string>
+    <string name="plott">Plot</string>
+    <string name="add_to_calendar">Add To Calendar</string>
+    <string name="back">Back</string>
+    <string name="todo">TODO</string>
+    <string name="searchh">Search</string>
+    <string name="backk">back</string>
 </resources>
