@@ -8,14 +8,4 @@
     android:orientation="vertical"
     tools:context=".Calendar">
 
-    <CalendarView
-        android:id="@+id/calendarView"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:background="#FFFF"
-        android:dateTextAppearance="@style/TextAppearance.AppCompat.Display1"
-        android:foregroundGravity="center"
-        android:textAlignment="center"
-        android:textDirection="inherit"
-        android:weekDayTextAppearance="@style/TextAppearance.AppCompat.Large" />
 </LinearLayout>
