@@ -143,7 +143,6 @@ public class Add extends AppCompatActivity {
         if (requestCode == SELECT_PHOTO) {
             Uri selectImage = data.getData();
             imageView.setImageURI(selectImage);
-
         }
     }
 }
