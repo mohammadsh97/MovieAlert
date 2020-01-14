@@ -1,26 +1,32 @@
 package com.mohammadSharabati_ahmadSharabati.moviealert;
 
-import androidx.appcompat.app.AppCompatActivity;
 import android.app.DatePickerDialog;
 import android.app.TimePickerDialog;
+import android.content.Intent;
 import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
+import android.net.Uri;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.DatePicker;
+import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.TimePicker;
-
 import java.util.Calendar;
+
+import androidx.appcompat.app.AppCompatActivity;
+
 
 public class Add extends AppCompatActivity {
 
+    private static final int SELECT_PHOTO = 100;
     private static final String TAG = "Add";
     private TextView mDisplayDate, time, RunTime;
     private Button AddImage;
     private DatePickerDialog.OnDateSetListener mDateSetListener;
+    ImageView imageView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -31,6 +37,7 @@ public class Add extends AppCompatActivity {
         time = (TextView) findViewById(R.id.time);
         RunTime = (TextView) findViewById(R.id.RunTime);
         AddImage = (Button) findViewById(R.id.AddImage);
+        imageView = findViewById(R.id.imageView);
 
         // >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> Date
         ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -122,9 +129,21 @@ public class Add extends AppCompatActivity {
         AddImage.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                Intent intent = new Intent(Intent.ACTION_PICK);
+                intent.setType("image/*");
+                intent.setAction(Intent.ACTION_GET_CONTENT);
+                startActivityForResult(Intent.createChooser(intent,"Select Image"), SELECT_PHOTO);
 
             }
         });
     }
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+        super.onActivityResult(requestCode, resultCode, data);
+        if (requestCode == SELECT_PHOTO) {
+            Uri selectImage = data.getData();
+            imageView.setImageURI(selectImage);
 
+        }
+    }
 }

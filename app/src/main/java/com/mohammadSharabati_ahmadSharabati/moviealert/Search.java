@@ -3,6 +3,8 @@ package com.mohammadSharabati_ahmadSharabati.moviealert;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+import android.widget.EditText;
+import android.widget.SimpleCursorAdapter;
 
 public class Search extends AppCompatActivity {
 
